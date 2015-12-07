@@ -13,8 +13,9 @@ nvm-fish is a functions that, in conjunction with bass, allow persistent setting
 
 Add
 
-    fundle plugin 'edc/bass'
     fundle plugin 'arzig/nvm-fish'
+
+to your ~/.config/fish/config.fish
 
 # Usage
 
