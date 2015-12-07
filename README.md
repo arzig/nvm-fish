@@ -4,8 +4,10 @@ Wrap nvm _persistently_ for use with the fish shell.
 
 There already exists the most excellent [Bass](https://github.com/edc/bass) for running bash scripts in fish.
 However, I found this approach somewhat unsatisfactory as there was no preservation of the currently set node version in other shells.
+nvm-fish is a function that allows the setting of a persistent node version across sessions.
 
-nvm-fish is a functions that, in conjunction with bass, allow persistent setting of a node environment with nvm.
+nvm-fish depends on having nvm already installed in the expected place.
+nvm installation and other goodies like completions are pending.
 
 # Installation
 
