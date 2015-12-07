@@ -27,3 +27,8 @@ Use nvm
     nvm use 5.1.1
     # Install gulp globally for 5.1.1
     npm install -g gulp
+
+# TODO
+
+* Completions for nvm
+* Detect if nvm is not available and/or install it
