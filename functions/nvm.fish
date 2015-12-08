@@ -4,7 +4,7 @@ function nvm --description "Configure the nvm command"
         set -l local_paths
         for path in $fish_user_paths
             if test $NVM_BIN != $path
-                set local_paths $path $local_paths
+                set local_paths $local_paths $path
             end
         end
         set -xU fish_user_paths $local_paths
@@ -26,7 +26,7 @@ function nvm --description "Configure the nvm command"
         set -l stripped_path
         for path in $PATH
             if test $path != $NVM_BIN
-                set stripped_path $path $stripped_path
+                set stripped_path $stripped_path $path
             end
         end
         set PATH $stripped_path
