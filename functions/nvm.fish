@@ -1,4 +1,8 @@
-function nvm --description "Configure the nvm command"
+function nvm --description "A wrapper for the nvm script"
+    if not nvm_is_installed
+        echo 'nvm does not appear to be installed. To install it, run nvm_install'
+        return 1
+    end
     # Always strip NVM_BIN from user_paths if it is defined
     if set -q NVM_BIN; and set -q fish_user_paths
         set -l local_paths

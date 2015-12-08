@@ -7,8 +7,8 @@ However, I found this approach somewhat unsatisfactory as there was no preservat
 nvm-fish is a function that allows the setting of a persistent node version across sessions.
 The effect is similar to that of using n (symlink management), however, no symlinks are necessary thanks to fish's awesomeness.
 
-nvm-fish depends on having nvm already installed in the expected place.
-nvm installation and other goodies like completions are pending.
+If nvm is not installed, you should be prompted to install it with `nvm_install`.
+This should install nvm from github using either `curl` or `wget` if `curl` can't be found.
 
 If you run into problems using nvm-fish, please open an issue or submit a pull a request and I'll gladly look into it as time permits.
 
@@ -29,12 +29,14 @@ Environment variables will be replayed as universal variables, so running `nvm c
 
 Use nvm
 
-    nvm ls-remote
+    nvm install 5.1.1
+    nvm install 0.12
     nvm use 5.1.1
+    
+    # In another shell
     # Install gulp globally for 5.1.1
     npm install -g gulp
 
 # TODO
 
 * Completions for nvm
-* Detect if nvm is not available and/or install it
